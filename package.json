@@ -5,12 +5,12 @@
   "description": "Monorepo wrapper for server and client",
   "scripts": {
     "install:server": "npm --prefix server install",
-    "install:client": "npm --prefix client/mern-learn-client install",
+    "install:client": "npm --prefix client install",
     "install": "npm run install:server && npm run install:client",
-    "build:client": "npm --prefix client/mern-learn-client run build",
+    "build:client": "npm --prefix client run build",
     "start:server": "npm --prefix server start",
     "start": "npm run build:client && npm run start:server",
-    "dev:client": "npm --prefix client/mern-learn-client run dev",
+    "dev:client": "npm --prefix client run dev",
     "dev:server": "npm --prefix server run dev",
     "dev": "echo 'Run client and server in separate terminals: npm run dev:client and npm run dev:server'"
   },

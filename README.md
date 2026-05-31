@@ -40,7 +40,7 @@ Usage on the EC2 instance (run from `/home/ubuntu` or your clone path):
 # make executable once
 chmod +x scripts/deploy.sh
 
-# run the deploy script
+# run the deploy script (assumes client is in `client/`)
 ./scripts/deploy.sh /home/ubuntu/mern-learn
 ```
 

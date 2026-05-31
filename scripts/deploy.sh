@@ -19,13 +19,13 @@ echo "Installing server dependencies..."
 npm --prefix server ci
 
 echo "Building client..."
-npm --prefix client/mern-learn-client ci
-npm --prefix client/mern-learn-client run build
+npm --prefix client ci
+npm --prefix client run build
 
-DIST_DIR="$REPO_PATH/client/mern-learn-client/dist"
+DIST_DIR="$REPO_PATH/client/dist"
 if [ ! -d "$DIST_DIR" ]; then
   # fallback to build output `build` if present
-  DIST_DIR="$REPO_PATH/client/mern-learn-client/build"
+  DIST_DIR="$REPO_PATH/client/build"
 fi
 
 if [ ! -d "$DIST_DIR" ]; then
