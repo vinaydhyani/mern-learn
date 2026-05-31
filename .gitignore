@@ -5,3 +5,8 @@ client/mern-learn-client/node_modules
 .env
 .vscode
 .DS_Store
+# SSH keys
+github-key
+github-key.pub
+ssh-keys
+ssh-keys.pub
